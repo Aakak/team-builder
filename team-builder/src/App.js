@@ -5,7 +5,11 @@ import MemberForm from "./components/MemberForm";
 import Member from "./components/Member";
 
 function App() {
-  const [members, setMembers] = useState([]);
+  const [members, setMembers] = useState([
+    {
+      name: "Team Member"
+    }
+  ]);
 
   const addNewMember = member => {
     const newMembers = {
