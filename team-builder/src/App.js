@@ -1,21 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
-// import ReactDOM from "react-dom";
 
-import Form from "./components/Form";
+import MemberForm from "./components/MemberForm";
 import Member from "./components/Member";
 
 function App() {
-  const [members, setMembers] = useState([
-    {
-      id: 1,
-      name: "Akak Almazbekova",
-      email: "akak@gmail.com",
-      role: "Student"
-    }
-  ]);
+  const [members, setMembers] = useState([]);
 
-  const AddNewMember = member => {
+  const addNewMember = member => {
     const newMembers = {
       id: Date.now(),
       name: member.name,
@@ -27,14 +19,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Join</h1>
-      <Form AddNewMember={AddNewMember} />
+      <h1>Lambda School Staff and Student News Letter</h1>
+      <MemberForm AddNewMember={addNewMember} />
       <Member members={members} />
     </div>
   );
 }
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 
 export default App;

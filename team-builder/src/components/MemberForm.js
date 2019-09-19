@@ -14,14 +14,15 @@ const MemberForm = props => {
   };
   const sumbitForm = event => {
     event.preventDefault();
-    props.AddNewMembers(members);
-    //clears the input values
+    props.AddNewMember(members);
+
+    //this clears the input values
     setMembers({ name: "", email: "", role: "" });
     console.log(event.target.value);
   };
   return (
     <form onSubmit={sumbitForm}>
-      <label htmlFor="name">Member Name</label>
+      <label htmlFor="name">Full Name</label>
       <input
         id="name"
         type="text"
@@ -30,7 +31,7 @@ const MemberForm = props => {
         value={members.name}
       />
 
-      <label htmlFor="email">Email</label>
+      <label htmlFor="email">Email Address</label>
       <textarea
         id="email"
         name="email"
@@ -45,7 +46,7 @@ const MemberForm = props => {
         onChange={HandleChanges}
         value={members.role}
       />
-      <button type="submit">Add Info</button>
+      <button type="submit">Sign Up</button>
     </form>
   );
 };
