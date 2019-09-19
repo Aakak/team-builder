@@ -5,7 +5,7 @@ const Member = props => {
     <>
       {props.members.map(member => (
         <div className="member" key={member.id}>
-          <h1>Thank you!</h1>
+          <h1>Welcome 💟</h1>
           <p>Check your email.</p>
           <div className="submit-card" key={member.id}>
             <h4>{member.name}</h4>

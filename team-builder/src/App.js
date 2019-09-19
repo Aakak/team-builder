@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Lambda School Staff and Student News Letter</h1>
+      <h1>Lambda School New Team Member Sign up</h1>
       <MemberForm AddNewMember={addNewMember} />
       <Member members={members} />
     </div>

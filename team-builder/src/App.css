@@ -27,17 +27,13 @@ input, textarea {
 }
 
 button {
-  background: #8B008B
-
-
-
-  ;
-  /* border: 1px solid #ffffff; */
+  background: #FFFF00;
   padding: 10px 15px;
   margin-top: 20px;
   width: 170px;
   font-size: 18px;
-  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12), 0 2px 2px 1px rgba(0, 0, 0, 0.24);
   transition: all 0.2 ease-in;
 }
